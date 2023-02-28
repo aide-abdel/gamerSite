@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="bodyContainer">
+        <div class="leftSideContainer">
+            
+            <div class="remainingClicks">
+                Remaining Attempts
+                <div id="remainingClicks"></div>
+            </div>
+            <div class="numMatches">
+                #Matches
+                <div id="numMatches"></div>
+            </div>
+        </div>
+      <div class="mainContainter">
+
+      </div>
+
+      <div class="rightSide">
+        <div class="musicPLayer">
+            <div id = "play" onclick="playMusic()"> 
+                <img src="https://cdn-icons-png.flaticon.com/512/189/189638.png" alt="" class="playIcon">
+            </div>
+            <div id = "pause" onclick="pauseMusic()"> 
+                <img src="https://cdn-icons-png.flaticon.com/512/6364/6364353.png" alt="" class="pauseIcon">
+
+            </div>
+        </div>
+        
+        <div class="time" id="time">
+            <!-- 2:00 -->
+        </div>
+        <div class="templates">
+            <div class="chooseColor" id="colorOne"></div>
+            <div class="chooseColor" id="colorTwo"></div>
+            <div class="chooseColor" id="colorThree"></div>
+            <div class="chooseColor" id="colorFour"></div>
+            <div class="chooseColor" id="colorFive"></div>
+        </div>
+      </div>
+      
+    </div>
+    <div id="gameHolder" >
+
+    </div>
+    <div class="bodybg">
+
+    </div>
+        <script src="app.js" async defer></script>
+    </body>
+</html>

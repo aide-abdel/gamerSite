@@ -1,0 +1,219 @@
+.mainContainter{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    width:40%;
+    height: 90vh;
+    position: relative;
+    margin-top: 2%;
+    /* background-color: aquamarine; */
+
+}
+.card{
+    /* border: solid black; */
+    transform-style: preserve-3d;
+    transition: all 0.8s ease;
+}
+.backImg{
+    width:85%;
+    /* height: 35%; */
+}
+
+.frontImg{
+    width:85%;
+    /* height: 35%; */
+}
+
+.front{
+    position: absolute;
+    backface-visibility: hidden;
+    text-align: center;
+}
+.back{
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    text-align: center;
+}
+
+.flipCard{
+    transform: rotateY(180deg);
+}
+
+.youwin{
+    position: absolute;
+    top:0;
+    left: 0;
+    background-image: url("https://t3.ftcdn.net/jpg/03/03/52/48/360_F_303524879_h1oC0wOJsh8uqo0aZf89lNJg7njTa5A8.jpg");
+    width: 100%;
+    border: solid black;
+    height: 100%;
+    background-size: cover;
+    z-index: 10;
+}
+.bodyContainer{
+    display: flex;
+}
+.leftSideContainer{
+    /* border: solid red; */
+    width: 30%;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* background-color: aliceblue;
+    border-radius: 5%; */
+}
+.time{
+    /* border: solid black; */
+    margin-top: 40%;
+    height: 30%;
+    /* background-color: white; */
+    font-size:9em;
+    font-weight: 200;
+    text-align: center;
+    /* color: rgb(54, 139, 54); */
+    background-color: rgb(240, 248, 255,.3);
+    border-radius: 5%;
+}
+.remainingClicks{
+    /* border: solid yellow; */
+    height: 15%;
+    /* background-color: white; */
+    font-size:3.2em;
+    font-weight: 200;
+    text-align: center;
+    /* color: rgb(54, 139, 54); */
+    background-color: rgb(240, 248, 255,.3);
+    border-radius: 3%;
+    padding: 10%;
+
+}
+.numMatches{
+/* border: solid green; */
+height: 15%;
+/* background-color: white; */
+    font-size:4em;
+    text-align: center;
+    font-weight: 200;
+    /* color: rgb(54, 139, 54); */
+    background-color: rgb(240, 248, 255,.3);
+    border-radius: 3%;
+    padding: 10%;
+}
+
+.rightSide{
+    /* border: solid magenta; */
+    width: 30%;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+   
+}
+.lostGame{
+    /* border: solid black; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* background-color: white; */
+    background-image: url("https://www.freesoundslibrary.com/wp-content/uploads/2020/06/game-lose-720x340.jpg");
+    background-size:contain;
+}
+
+.winGame{
+    /* border: solid black; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* background-color: white; */
+    background-image: url("https://t4.ftcdn.net/jpg/05/13/32/99/360_F_513329932_1CHcSjGcNTkQe4t6WsT5ZaGcTfDHvl2q.jpg");
+    background-size:contain;
+}
+
+.musicPLayer{
+    /* border: solid magenta; */
+    width: 20%;
+    margin-left: 40%;
+    margin-top: 20%;
+    height: 3.5%;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: wheat; */
+    /* border-radius: 10%; */
+   
+}
+#play{
+    width: 50%;
+    height: 100%;
+    /* margin-top: 7%; */
+    margin-right: 15%;
+
+    /* background-color: wheat; */
+    
+}
+#pause{
+    width: 50%; 
+    /* margin-top: 7%; */
+    /* background-color: wheat; */
+}
+.playIcon{
+    width: 90%;
+    margin-left: 20%;
+    margin-top: 3%;
+}
+.pauseIcon{
+    width: 90%;
+    margin-left: 25%;
+    margin-top: 3%;
+}
+.pauseIcon:hover{
+    width: 100%;
+    cursor: pointer;
+}
+.playIcon:hover{
+    width: 100%;
+    cursor: pointer;
+}
+.bodybg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* background-color: white; */
+   background-color: rgb(69, 53, 85);
+    background-size: cover;
+    z-index: -1;
+    opacity: .5;
+}
+
+.templates{
+    /* border: solid magenta; */
+    margin: 10%;
+    height: 10%;
+    display: flex;
+}
+.chooseColor{
+    /* border: solid black; */
+    width: 20%;
+}
+#colorOne{
+    background-color: aqua;
+}
+#colorTwo{
+    background-color:chartreuse;
+}
+#colorThree{
+    background-color: chocolate;
+}
+#colorFour{
+    background-color: crimson;
+}
+#colorFive{
+    background-color:darkorchid;
+}

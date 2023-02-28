@@ -1,0 +1,51 @@
+.mainContainer{
+    position: relative;
+    width: 70%;
+    margin: auto;
+    border: solid black;
+    height: 80vh;
+}
+
+.battleground{
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.myShip{
+    width: 20%;
+    border: solid yellow;
+    height: 50%;
+    margin-top: 15%;
+    margin-left: 10%;
+}
+.openent{
+    width: 20%;
+    border: solid green;
+    height: 50%; 
+    margin-top: 15%;
+    margin-right: 10%;
+}
+
+.shipImg{
+    width: 100%;
+    opacity: .5;
+}
+.myweapon{
+    width: 2%;
+    height: 2%;
+    border: solid red;
+    position: relative;
+    left: -200px;
+    top: 50%;
+    display: block;
+}
+.oponentweapon{
+    width: 2%;
+    height: 2%;
+    /* border: solid black; */
+    position: relative;
+    right: 400px;
+    top: 60%;
+    display: block;
+}

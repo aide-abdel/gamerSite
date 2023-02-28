@@ -1,0 +1,9 @@
+.mainCanvas{
+    background-color: black;
+    border: 1px solid orange;
+    border-radius: 2%;
+    width: 800px;
+    height: 500px;
+    margin-left: 25%;
+    margin-top: 7%;
+}
